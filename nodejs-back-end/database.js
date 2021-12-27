@@ -16,8 +16,7 @@ function createTestTable(database) {
     database.run(`CREATE TABLE pets (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         name TEXT UNIQUE,
-        age INTEGER,
-        CONSTRAINT name_unique UNIQUE (name)
+        age INTEGER
     )`, (err) => {
         if(!err) {
             const insertTemplate = 'INSERT INTO pets (name, age) VALUES (?,?)';
