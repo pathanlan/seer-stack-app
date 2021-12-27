@@ -138,3 +138,6 @@ nodejs*/static
 
 # macOS system files
 .DS_Store
+
+# sqlite database
+*.sqlite
