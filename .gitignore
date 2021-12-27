@@ -125,3 +125,16 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# -----
+# My Changes
+# -----
+
+# React build files
+react*/build
+
+# NodeJS static files
+nodejs*/static
+
+# macOS system files
+.DS_Store

@@ -15,7 +15,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build-and-copy": "npm run build && shx rm -rf ..//nodejs-back-end//static && shx cp -R ./build ../nodejs-back-end && shx mv ../nodejs-back-end/build ../nodejs-back-end/static"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +35,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "shx": "^0.3.3"
   }
 }

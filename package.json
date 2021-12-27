@@ -1,5 +1,11 @@
 {
   "dependencies": {
     "create-react-app": "^5.0.0"
+  },
+  "scripts": {
+    "build-react-and-run": "cd react-front-end && npm run build-and-copy && cd ../nodejs-back-end && node .",
+    "br": "npm run build-react-and-run",
+    "run-back-end-only": "cd nodejs-back-end && node .",
+    "r": "npm run run-back-end-only"
   }
 }
